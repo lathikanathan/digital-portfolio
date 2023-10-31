@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle>portfolio</tittle>
+        <style>
+            body{
+                font-family: Arial, sans-serifl;
+                margin:0;
+                padding:0;
+                background-color:burlywood;
+            }
+            header{
+                background-color:black;
+                color:#fff;
+                text-align:center;
+                padding: 2rem 0;
+                position: relative; /* Add this */                
+            }
+            .header-content h1{
+                font-size: 2.5rem;                
+            }
+            .profile-picture{
+                width:150px;
+                height:150px;
+                border-radius:75%;
+                object-fit:cover;
+                position:absolute;
+                top:35px;
+                left:75px;                
+            }
+            nav{
+                background-color:brown;
+                color:#fff;
+                text-align: center;
+            }
+            nav ul{
+                list-style-type: none;
+                padding: 0;
+            }
+            nav ul li{
+                display: inline;
+                margin: 0 30px;
+            }
+            nav ul li a{
+                text-decoration:none;
+                color: #fff;
+            }
+            .section-content{
+                background-color:brown;
+                color: #fff;
+                padding: 1rem 10rem;
+                text-decoration: none;
+                border-radius: 50px;
+                display: inline-block;
+                margin-top: 40px;
+                align-self: left;
+            }
+            .download-button:hover{
+                background-color: #555;                
+            }
+            footer{
+                text-align: center;
+                padding:1rem 0;
+                background-color: #333;
+                color: #fff;
+            }
+            ul{
+                list-style-type: disc;
+                padding-left: 30px;
+            }
+            </style>
+            </head>
+            <body>
+                <header>
+                    <div class="header-content">
+                        <!--Add your profile picture here-->
+                        <img src="./images/girl.jpg" alt="your profile picture" class="profile-picture">
+                        <h1>LATHIKA N</h1>
+                        <P>B.SC.COMPUTER SCIENCE STUDENT</P>                        
+                    </div>                    
+                </header>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href=#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                    </ul>
+                </nav>
+                <center><section id="about">
+                    <div class="section-content">
+                        <h2>About Me</h2>
+                        <p>I am a computer science student and i learn web design and i love it.</p>
+                    </div>
+                </section>
+                <section id="education">
+                    <div class="section-content">
+                        <h2>Education</h2>
+                        <p>Alagappa university-st.joseph arts and science collage for women-B.SC.CS </p>
+                    </div>
+                </section>
+                <section id="skills">
+                    <div class="section-content">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>java</li>
+                        <li>html</li>
+                        <li>javascribt,css</li>
+                    </ul>
+                    </div>
+                </section>
+                <section id="projects">
+                    <div class="section-content">
+                        <h2>Projects</h2>
+                        <ul>
+                            <li><a href="#">tourism</a></li>
+                            <li><a href="#">index2</a></li>
+                            <!--Add more projects links here-->
+                        </ul>
+                    </div>
+                </section>
+                <section id="resume">
+                    <div class="section-content">
+                    <center>
+                        <h2>Resume</h2>
+                        <a href="file:///C:/Users/Lathika%20nathan/Downloads/biodata.pdf" class="download-button">Download CV</a>
+                    </center>
+                </div>
+                </section></center>
+                <fooder>
+                    <center><p>&copy; 2023 LATHIKA N</p></center>
+                </fooder>
+                <script>
+                    docum
+                    ent.querySelectorAll('a[href^="#"]').foreach(anchor => {
+                        anchor.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            const targetId=this.getAttribute('href').substring(1);
+                            const targetElement=document.getElementById(targetId);
+                            if(targetElement){
+                                window.scrollTo({
+                                    top:targetElement.offsetTop,
+                                    behavior:'smooth'
+                                });
+                            }
+                        });
+                    });
+                </script>
+            </body>
+            </html>
